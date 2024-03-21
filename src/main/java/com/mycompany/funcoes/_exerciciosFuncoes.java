@@ -18,7 +18,8 @@ public class _exerciciosFuncoes {
                 + "\n+ = somar\n"
                 + "- = subtrair\n"
                 + "* = multiplicar\n"
-                + "/ = dividir\n");
+                + "/ = dividir\n"
+                + "@ = resultado ao cubo");
        String sinal = teclado2.nextLine();
         
      
@@ -52,9 +53,17 @@ public class _exerciciosFuncoes {
                 
                 
             }else{
+                if(sinal.equalsIgnoreCase("@")){
+                 
+                    System.out.println("O resultado é: "+ numeros4(num1));
+                    
+                    
+                }else{
+                
+                
                 System.out.println("Sinal inválido");
                 
-            }}}}
+            }}}}}
          
        
        
@@ -90,6 +99,13 @@ public class _exerciciosFuncoes {
     public static int numeros3 (int divisao1, int divisao2){
         
         return divisao1 /= divisao2;
+        
+    }
+    public static int numeros4 (int potencia1){
+   
+     
+        
+         return (int)Math.pow(potencia1, 3);
         
     }
     
